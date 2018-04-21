@@ -43,9 +43,3 @@ install(FILES nodelets.xml
 install(DIRECTORY launch
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
-
-if(CATKIN_ENABLE_TESTING)
-  find_package(roslint REQUIRED)
-  roslint_cpp()
-  roslint_add_test()
-endif()
